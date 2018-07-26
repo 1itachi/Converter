@@ -79,6 +79,9 @@
 
 
     <script>
+
+
+
     document.getElementById('output').style.visibility = 'hidden'; 
        
     document.getElementById('lbsInput').addEventListener('input',function(e){
@@ -87,6 +90,11 @@
         document.getElementById('gramsOutput').innerHTML = lbs*453.592;
         document.getElementById('kgOutput').innerHTML = lbs*0.453592;
         document.getElementById('ozOutput').innerHTML = lbs*16;
+        if (document.getElementById('lbsInput').value == ''||document.getElementById('lbsInput').value == 0){
+            document.getElementById('output').style.visibility = 'hidden'; 
+        }
+
+
     });
     
     
