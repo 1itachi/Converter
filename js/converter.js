@@ -10,7 +10,7 @@
         var sel = document.getElementById("sel1");
         var selOption = sel.options[sel.selectedIndex].text;
         
-        console.log(selOption);
+        
         
        if (selOption == "Pounds"){
         calculateWeight(weight,453.592,0.453592,16,1);
